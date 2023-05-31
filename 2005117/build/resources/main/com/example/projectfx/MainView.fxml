@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.MainController">
+   <children>
+      <VBox prefHeight="402.0" prefWidth="210.0" style="-fx-background-color: #5a5558;">
+         <children>
+            <Button fx:id="searchMovies" mnemonicParsing="false" onAction="#searchMoviesClicked" prefHeight="82.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Search Movies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="productionCompany" mnemonicParsing="false" onAction="#productionCompanyClicked" prefHeight="76.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Production Company" textFill="WHITE">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="transferMovie" mnemonicParsing="false" onAction="#transferMovieClicked" prefHeight="80.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Transfer Movie" textFill="WHITE">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addMovieClicked" prefHeight="75.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Add Movie" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#goBackClicked" prefHeight="75.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Go Back" textFill="#fcfbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exitClicked" prefHeight="78.0" prefWidth="210.0" style="-fx-background-color: #5a5558;" text="Exit" textFill="WHITE">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="402.0" fitWidth="389.0" layoutX="211.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@EndGame.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

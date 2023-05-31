@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.LogInController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="602.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogIn.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="136.0" prefHeight="36.0" prefWidth="181.0" style="-fx-background-color: #c39797;" text="  Enter a Production Company">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="productionCompany" layoutX="257.0" layoutY="136.0" prefHeight="36.0" prefWidth="227.0" promptText="Production Company">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Button fx:id="LogIn" layoutX="344.0" layoutY="200.0" mnemonicParsing="false" onAction="#LoginClicked" text="Log In">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+   </children>
+</AnchorPane>

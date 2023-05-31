@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.ByTitleController">
+   <children>
+      <Button layoutX="40.0" layoutY="324.0" mnemonicParsing="false" onAction="#backClicked" text="Go Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <TextField fx:id="title" layoutX="293.0" layoutY="167.0" onAction="#titleSelected" prefHeight="39.0" prefWidth="182.0" promptText="Movie Title" />
+      <Label layoutX="143.0" layoutY="167.0" prefHeight="39.0" prefWidth="127.0" style="-fx-background-color: #e2d4d1;" text="   Enter a Movie Title" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="499.0" layoutY="324.0" mnemonicParsing="false" onAction="#submitClicked" text="Submit">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

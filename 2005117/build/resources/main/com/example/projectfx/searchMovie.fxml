@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.SearchMovieController">
+   <children>
+      <Button fx:id="back" layoutY="336.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="63.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text=" Go Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="movieTitle" layoutY="-3.0" mnemonicParsing="false" onAction="#byMovieTitle" prefHeight="71.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text="By Movie Title" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="realeseYear" layoutY="66.0" mnemonicParsing="false" onAction="#byRealeseYear" prefHeight="71.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text="By Release Year" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="genre" layoutY="137.0" mnemonicParsing="false" onAction="#byGenreClicked" prefHeight="71.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text="By Genre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="runningTime" layoutY="207.0" mnemonicParsing="false" onAction="#byRunningTime" prefHeight="71.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text="By Running time" textFill="WHITE">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="allMovie" layoutY="278.0" mnemonicParsing="false" onAction="#AllMovies" prefHeight="63.0" prefWidth="212.0" style="-fx-background-color: #5a5558;" text="All Movies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <ImageView fitHeight="176.0" fitWidth="392.0" layoutX="209.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="400.0" fitWidth="392.0" layoutX="209.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@starwarss.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

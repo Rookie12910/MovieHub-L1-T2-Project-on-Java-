@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.ByRealeseYearController">
+   <children>
+      <Label layoutX="152.0" layoutY="163.0" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #e2d4d1;" text="Enter a Realese Year" textFill="#222222">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="realeseYear" layoutX="317.0" layoutY="163.0" prefHeight="37.0" prefWidth="141.0" promptText="Realese Year" />
+      <Button fx:id="back" layoutX="67.0" layoutY="317.0" mnemonicParsing="false" onAction="#backClicked" text="Go Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="submit" layoutX="498.0" layoutY="317.0" mnemonicParsing="false" onAction="#submitClicked" text="Submit">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

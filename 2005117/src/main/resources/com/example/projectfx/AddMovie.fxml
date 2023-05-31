@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2a363b;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.AddMovieController">
+   <children>
+      <Label layoutX="113.0" layoutY="38.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="     Movie Title">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="90.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="      Release Year">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="143.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="        Genre">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="197.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="     Running Time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="252.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="         Budget">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="302.0" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #c39797;" text="       Revenue">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="title" layoutX="258.0" layoutY="42.0" prefHeight="26.0" prefWidth="150.0" promptText="Title" />
+      <TextField fx:id="year" layoutX="258.0" layoutY="94.0" prefHeight="26.0" prefWidth="150.0" promptText="Release Year" />
+      <TextField fx:id="genre1" layoutX="258.0" layoutY="147.0" prefHeight="26.0" prefWidth="102.0" promptText="Genre1" />
+      <TextField fx:id="genre2" layoutX="374.0" layoutY="147.0" prefHeight="26.0" prefWidth="102.0" promptText="Genre2" />
+      <TextField fx:id="genre3" layoutX="491.0" layoutY="147.0" prefHeight="26.0" prefWidth="102.0" promptText="Genre3" />
+      <TextField fx:id="time" layoutX="258.0" layoutY="194.0" prefHeight="34.0" prefWidth="150.0" promptText="Running Time (In Minutes)" />
+      <TextField fx:id="budget" layoutX="258.0" layoutY="251.0" prefHeight="34.0" prefWidth="128.0" promptText="Budget" />
+      <TextField fx:id="revenue" layoutX="258.0" layoutY="302.0" prefHeight="34.0" prefWidth="128.0" promptText="Revenue" />
+      <Button fx:id="back" layoutX="14.0" layoutY="351.0" mnemonicParsing="false" onAction="#backClicked" text="Go Back">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="submit" layoutX="508.0" layoutY="352.0" mnemonicParsing="false" onAction="#submitClicked" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+   </children>
+</AnchorPane>
